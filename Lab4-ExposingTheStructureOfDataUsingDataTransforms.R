@@ -197,6 +197,7 @@ if (require("FactoMineR")) {
 ### The Boston Housing Dataset ----
 # Execute the following to load the “BostonHousing” dataset which is offered
 # in the "mlbench" package:
+library(mlbench)
 data("BostonHousing")
 
 ### Crop Dataset ----
@@ -220,6 +221,7 @@ names(iris_dataset) <- c("sepal length in cm", "sepal width in cm",
 ### The Pima Indians Diabetes Dataset ----
 # Execute the following to load the "Pima Indians Diabetes" dataset from the
 # mlbench package:
+library(mlbench)
 data("PimaIndiansDiabetes")
 
 # Scale Data Transform ----
@@ -275,6 +277,10 @@ hist(BostonHousing[, 11], main = names(BostonHousing)[11])
 hist(BostonHousing[, 12], main = names(BostonHousing)[12])
 hist(BostonHousing[, 13], main = names(BostonHousing)[13])
 hist(BostonHousing[, 14], main = names(BostonHousing)[14])
+
+install.packages("caret")
+
+library(caret)
 
 model_of_the_transform <- preProcess(BostonHousing, method = c("scale"))
 print(model_of_the_transform)

@@ -193,3 +193,4 @@ student_performance_dataset <-
 
 View(student_performance_dataset)
 
+##scale data transform

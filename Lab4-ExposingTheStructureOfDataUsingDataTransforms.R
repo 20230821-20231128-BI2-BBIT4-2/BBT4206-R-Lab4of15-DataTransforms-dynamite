@@ -209,7 +209,7 @@ crop_dataset <- read_csv("data/crop.data.csv",
   )
 )
 
-### Iris Dataset ----
+###Iris Dataset ----
 # Execute the following to load the downloaded Iris dataset:
 iris_dataset <- read.csv("data/iris.data", header = FALSE,
                          stringsAsFactors = TRUE)

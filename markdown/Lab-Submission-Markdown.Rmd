@@ -1,3 +1,60 @@
+---
+title: "Business Intelligence Project"
+author: "Dynamite"
+date: "<16th Oct>"
+output:
+  github_document:
+    toc: yes
+    toc_depth: 4
+    fig_width: 6
+    fig_height: 4
+    df_print: default
+  html_document:
+    toc: yes
+    toc_depth: '4'
+    df_print: paged
+editor_options:
+  chunk_output_type: console
+---
+
+# Student Details
+
+136804 Joy Mutai 
+135864 Winnie Githia 
+120313 Daniel Obala 
+136017 Unika Mureithi 
+133598 Shirlene Ouma
+
+# Setup Chunk
+
+Note: the following KnitR options have been set as the global defaults: <BR> `knitr::opts_chunk$set(echo = TRUE, warning = FALSE, eval = TRUE, collapse = FALSE, tidy = TRUE)`.
+
+More KnitR options are documented here <https://bookdown.org/yihui/rmarkdown-cookbook/chunk-options.html> and here <https://yihui.org/knitr/options/>.
+
+{r setup, include=FALSE}
+library(formatR)
+knitr::opts_chunk$set(
+  warning = FALSE,
+  collapse = FALSE
+)
+
+
+# Understanding the Dataset (Exploratory Data Analysis (EDA))
+
+## Loading the Dataset
+
+### Source:
+
+The dataset that was used can be downloaded here: \<https://github.com/20230821-20231128-BI2-BBIT4-2/BBT4206-R-Lab4of15-DataTransforms-dynamite/tree/main/data\>
+
+### Reference:
+
+*\<Cite the dataset here using APA\>\
+Refer to the APA 7th edition manual for rules on how to cite datasets: <https://apastyle.apa.org/style-grammar-guidelines/references/examples/data-set-references>*
+
+{r Dataset Loader}
+library(readr)
+
 #install packages
 ##language server---
 if (require("languageserver")) {
